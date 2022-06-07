@@ -7,3 +7,6 @@
     background-color: rgb(175, 205, 240)!important;
     cursor: pointer;
 }
+.btn:target{
+    background-color: rgb(185, 106, 209)!important;
+}

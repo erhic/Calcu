@@ -7,33 +7,35 @@
 
 // select all the buttons
 
-const buttons =document.querySelectorAll('button');
+// const buttons =document.querySelectorAll('button');
 
-// select the <input type=”text” class=”display” disabled> element
+// // select the <input type=”text” class=”display” disabled> element
 
-const display =document.querySelector('display');
+// const display =document.querySelector('display');
 
-// add eventListener to each button
+// // add eventListener to each button
 
-buttons.forEach(function(button){
-    button.addEventListener('click',calculate);
-});
+// // buttons.forEach(function(button){
+// //     button.addEventListener('click',calculate);
+// // });
 
-// calculate function
-function calculate(event){
-    const clickedButtonValue =event.target.value;
-    if(clickedButtonValue === '='){
-        if(display.value!== ""){
-            display.value=eval(display.value);
-        }
-        else if (clickedButtonValue ==="clr"){
-            display.value= ""
-        }
-        else{
-            display.value += clickedButtonValue;
-        }
+// // // calculate function
+// // function calculate(event){
+// //     const clickedButtonValue =event.target.value;
+// //     if(clickedButtonValue === '='){
+// //         if(display.value!== ""){
+// //             display.value=eval(display.value);
+// //         }
+// //         else if (clickedButtonValue ==="clr"){
+// //             display.value= ""
+// //         }
+// //         else{
+// //             display.value += clickedButtonValue;
+// //         }
 
-    }
-}
+// //     }
+// // }
 
-  
+const marks =(...args)=>  args;
+
+console.log(marks(23,30,67))
